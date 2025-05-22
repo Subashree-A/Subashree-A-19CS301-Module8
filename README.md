@@ -1,151 +1,135 @@
-# 19CS301Module8
+# 19CS301-Module8
+### Register No - 212222020029
+### Name - Subashree A
 
-- **Name:** Subashree A  
-- **Register Number:** 212222020029
-
-
-EXPTNO.8a Program to find Find the simple interest
-
-### Aim: To Write a Python Program to find Find the simple interest by getting the principal, rate and time value from the user
+# ExNo: 8.1 HackerRankChallenges
+### Aim: To Write a python program to find the amount paid by Vimla, If 5% discount was given and 2% CST was paid.Vimla purchased a microwave oven with the price Rs. 25,000. Finalamount = amount +cst_amount - discount_amountmax_speed(),change_gear() override the same methods of base class  using method overriding
 ### Algorithm:
 
-STEP 1: Start.
+**STEP 1:** Start.
 
-STEP 2: Define a function.
+**STEP 2:** Initialize variable `amt` with 25000.
 
-STEP 3: Create variable 'p','r','t' for principal,rate of interest and time. STEP 4: Get the input of p,r and t from user.
+**STEP 3:** Calculate `final` as:  
+&nbsp;&nbsp;&nbsp;&nbsp;`amt + (2% of 25000) - (5% of 25000)`.
 
-STEP 5 : Using the formula (p*r*t)/100 calculate the result. STEP 6: Print the result.
+**STEP 4:** Print the value of `final`.
 
-STEP 7: Stop.
+**STEP 5:** Stop.
 
 ### Program:
 ```
-def simpleInterest(p,t,r):
-      si = p*t*r/100
-       return si
-p = eval(input())
-r = eval(input())
-t = eval(input())
+amt = 25000
+final=amt+((2/100)*25000)-((5/100)*25000)
+print(final)
+
 ```
-### Output:
-![image](https://github.com/user-attachments/assets/0cc71222-9697-4545-a937-b330407cbc02)
-
-
-
-
+### OUTPUT:
+![image](https://github.com/user-attachments/assets/c57524d3-e975-47e3-9504-00414d48028e)
 
 ### Result: Thus, the given program is implemented and executed successfully .
 
-EXPTNo.8b program to display elements from a list, present at odd index positions
-
+# ExNo: 8.2 HackerRankChallenges
 ### Aim: To Write a python program to display elements from a list, present at odd index positions
 ### Algorithm:
 
-STEP 1: Start.
+**STEP 1:** Start.
 
-STEP 2: Define a function.
+**STEP 2:** Take input `a` (number of elements).
 
-STEP 3: Create a list and a variable a.
+**STEP 3:** For each `i` in range 0 to `a-1`:  
+- Take input `b`.  
+- If `i` is odd (`i % 2 != 0`), print `b` with a space.
 
-STEP 4: Get the input of a from user.
-
-STEP 5 : Using loop get the inputs and append in list.
-
-STEP 6: Using another loop print the elements in the odd index position of the list. 
-
-STEP 7: Stop.
+**STEP 4:** Stop.
 
 ### Program:
 ```
-def odd(a):
-         l=[]
-          for i in range(a):
-x = int(input())
-l.append(x)
-for i in range(a):
-           if i%2!=0:
-                print(l[i], end=" ")
- a = int(input())
-odd(a)
+a = int(input())
+for i in range (0,a):
+    b = int(input())
+    if i%2!=0:
+        print(b,end=" ")
+
 ```
-### Output:
-![image](https://github.com/user-attachments/assets/a13fba7c-36b5-4227-98c1-82ab22a7804a)
+### OUTPUT:
+![image](https://github.com/user-attachments/assets/71488b37-fe18-44bd-af2e-5cc09941f377)
 
 ### Result: Thus, the given program is implemented and executed successfully .
- 
 
-EXPT NO>8C To Write a python program to Given the participants'	score sheet for your University Sports Day, you are required to find the runner-up score
-### Aim: To Write a python program to Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score. You are given scores. Store them 
-         in a list and find the score of the runner-up.
-
-
-### Algorithm:
-STEP 1: Start.
-
-STEP 2: Create a variable n.
-
-STEP 3: Get the value of n from user.
-
-STEP 4: Get the number of inputs from user and split the input and append in a list. STEP 5: Using set function remove duplicates from the list.
-
-STEP 6: Using sort function reorder the list in ascending order. STEP 7: Print the result.
-
-STEP 8: Stop.
-
-
-### Program:
-```if  name	== '   main    ':
-          n = int(input())
-          arr = map(int, input().split())
-          arr2 = list(set(arr))
-          arr2.sort()
-print(arr2[-2])
-
-### Output:
- 
-![image](https://github.com/user-attachments/assets/032939c0-f500-4bbb-9b19-87b3c54d8454)
-
- 
-
-### Result: Thus, the given program is implemented and executed successfully .
- 
-
-
-EX: 8.d program to square all the even numbers and cube all odd numbers from a list of integers
-### Aim: To Develop a python program to square all the even numbers and cube all odd numbers from a list of integers. Get the starting and ending range to create a list.
-
-
+# ExNo: 8.3 HackerRankChallenges
+### Aim: To write a python program to find the runner up score Given the participants' score sheet for your University Sports Day. You are given  scores. Store them in a list and find the score of the runner-up.
 ### Algorithm:
 
-STEP 1: Start.
+**STEP 1:** Start.
 
-STEP 2: Create a variable f and l for upper and lower limit of list. STEP 3: Get the value of f and l from user.
+**STEP 2:** Take input `n` (number of elements).
 
-STEP 4: Create a list.
+**STEP 3:** Take input list `a` of `n` integers.
 
-STEP 5 : Get the input from user and append in the list. STEP 6: Create a lambda function to calculate the result. STEP 7: Print the result.
+**STEP 4:** Convert list `a` to a set to get unique elements.
 
-STEP 8 : Stop.
+**STEP 5:** Sort the unique elements in descending order and store in `uniq`.
+
+**STEP 6:** If the length of `uniq` is greater than 1, print the second element (`uniq[1]`).
+
+**STEP 7:** Otherwise, print `"no"`.
+
+**STEP 8:** Stop.
 
 ### Program:
 ```
-cube = lambda x: x**2 if x%2==0 else x**3
+n = int(input())
+a = [int(x) for x in input().split()]
+uniq = sorted(set(a), reverse = True)
+if len(uniq)>1:
+    print(uniq[1])
+else:
+    print("no")
+
+```
+### OUTPUT:
+![image](https://github.com/user-attachments/assets/6185a556-40d5-4722-a56d-6736670e42db)
+
+### Result: Thus, the given program is implemented and executed successfully .
+
+# ExNo: 8.4 HackerRankChallenges
+### Aim: To Develop a python program to square all the even numbers and cube all odd numbers from a list of integers. Get the starting and ending range to create a list
+### Algorithm:
+
+**STEP 1:** Start.
+
+**STEP 2:** Define a function `fun(f, l)` that:
+- Returns a list of integers from `f` to `l` inclusive.
+
+**STEP 3:** Define a function `cube(num)` that:
+- If `num` is even, returns the square of `num`.
+- Otherwise, returns the cube of `num`.
+
+**STEP 4:** Take integer inputs `f` and `l` from the user.
+
+**STEP 5:** (Optional) Call `fun(f, l)` to get the list of numbers.
+
+**STEP 6:** (Optional) For each number in the list, call `cube(num)` to get the respective value.
+
+**STEP 7:** Stop.
+
+### Program:
+```
 def fun(f,l):
-     l1=[]
-     for i in range(f,l+1):
-           l1.append(i)
-      return l1
-f,l = int(input()),int(input())
+    return list(range(f,l+1))
+def cube(num):
+   
+        if num%2==0:
+             cube=num*num
+        else:
+             cube=num**3
+        return cube
+f = int(input())
+l = int(input())
 
 ```
-### Output:
-![image](https://github.com/user-attachments/assets/4a9076d8-a2cf-44e1-b7d1-e638b7edf12f)
-
-
+### OUTPUT:
+![image](https://github.com/user-attachments/assets/f037bf5f-5cd8-48b9-926c-243f5436fe59)
 
 ### Result: Thus, the given program is implemented and executed successfully .
- 
-
-
-# Subashree-A-19CS301-Module8
