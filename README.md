@@ -133,3 +133,33 @@ l = int(input())
 ![image](https://github.com/user-attachments/assets/f037bf5f-5cd8-48b9-926c-243f5436fe59)
 
 ### Result: Thus, the given program is implemented and executed successfully .
+
+# Ex No: 8.5 SEB-Vowels
+# README
+
+### Aim:
+To write a Python program to check and accept the given string if it contains all vowels i.e. ‘a’, ‘e’, ‘i’, ‘o’, ‘u’ using recursion.
+
+### Algorithm:
+
+**STEP 1:** Start.  
+**STEP 2:** Take input string `str`.  
+**STEP 3:** Check if all vowels `'a'`, `'e'`, `'i'`, `'o'`, `'u'` are present in the string using `if` condition.  
+**STEP 4:** If present, print "Accepted", else print "Not Accepted".  
+**STEP 5:** Stop.
+
+### Program:
+```python
+str = input()
+if "a" in str and "e" in str and "i" in str and "o" in str and "u" in str:
+    print("Accepted")
+else:
+    print("Not Accepted")
+```
+### Output:
+![image](https://github.com/user-attachments/assets/efeaaf4b-4074-46d0-a414-85c6543837bd)
+# Result: Thus the program was executed successfully.
+
+
+
+
